@@ -1,24 +1,26 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import  { Home } from './pages/Home';
+import {Details} from './pages/Details'
+import { useState } from 'react';
+import Data from "./data/Data.json";
 
 function App() {
+  // const [card, setCard] = useState()
+  console.log("Data", Data);
+  Data.map((item) => {
+    return console.log(item.name)
+  })
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+
+    {/* <h1>Hey</h1> */}
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/details/:id' element={<Details />} />
+      </Routes>
+    </>
   );
 }
 
