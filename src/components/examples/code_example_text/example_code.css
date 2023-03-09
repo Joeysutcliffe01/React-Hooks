@@ -1,0 +1,57 @@
+.details_main_code_example_container {
+    padding: 1rem;
+    /* border: 2px solid red; */
+}
+
+.details_main_code_example {
+    background-color: #282c34;
+    border-radius: 1rem;
+    position: relative;
+    /* border: 2px solid rgb(0, 21, 255); */
+}
+
+.details_main_code_example_btn_container {
+    display: flex;
+    justify-content: flex-end;
+    /* border: 2px solid rgb(255, 238, 0); */
+}
+
+.details_main_code_example_btn {
+    margin: 1rem 1rem 0 0rem;
+    padding: .1rem;
+    border-radius: .5rem;
+    background-color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    /* border: 2px solid rgb(68, 255, 0); */
+}
+
+.details_main_code_example_btn {
+    display: flex;
+    justify-content: space-between;
+    transition: all .3s ease;
+    padding: .3rem;
+}
+
+.details_main_code_example_btn:hover {
+    transform: scale(1.1);
+}
+
+.details_main_code_example_btn span {
+    margin: 0 .4rem;
+}
+
+.details_main_code_example_h1 {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    width: 50%;
+    text-align: center;
+    font-size: 1.2em;
+    border-radius: .5rem;
+    padding: .5rem;
+    background-color: aliceblue;
+}
