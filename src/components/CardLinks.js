@@ -19,12 +19,12 @@ export function CardLinks({ Data }) {
                   alt={`The ${item.name} Hook`}
                 />
               </div>
-              <div className="card_links_paragraph">
+              <div className="card_links_paragraph_container">
                 <div className="card_links_title">
                   <h1>{item.name}</h1>
                 </div>
                 <div className="card_links_paragraph">
-                  <p>{item.short_dec}</p>
+                  <p>{item.shortDec}</p>
                 </div>
               </div>
             </div>

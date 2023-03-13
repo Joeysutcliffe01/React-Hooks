@@ -2,6 +2,7 @@ import logo from "../photos/Logo.png";
 import reactLogo from "../photos/react_3d_logo.png";
 import { Link, useParams } from "react-router-dom";
 import { CodeExampleText } from "../components/examples/code_example_text/CodeExampleText";
+import { CardLinks } from "../components/CardLinks";
 
 // import ExampleCode from "../components/ExampleCode";
 
@@ -23,13 +24,26 @@ export function Details({ Data }) {
           src={reactLogo}
           alt="3d react logo"
         />
-        <h1 className="details_hero_text">{pageInfo.name}</h1>
+        <div className="details_hero_text_container">
+          <h1 className="details_hero_title">{pageInfo.name}</h1>
+          <p className="details_main_short_dec">{pageInfo.shortDec}</p>
+        </div>
       </div>
       <div className="details_main">
-        <p className="details_main_p">{pageInfo.short_dec}</p>
+        <div className="details_main_description one">{pageInfo.dec1}</div>
+        <div className="details_main_description two">{pageInfo.dec2}</div>
+        <div className="details_main_description three">{pageInfo.dec3}</div>
+        <div className="details_main_description four">{pageInfo.dec4}</div>
+        <div className="details_main_description five">{pageInfo.dec5}</div>
+        <div className="details_main_description six">{pageInfo.dec6}</div>
+        <div className="details_main_description seven">{pageInfo.dec7}</div>
+        <div>
+          <CodeExampleText codeExample={pageInfo.codeExample} />
+          {pageInfo.hookExample}
+        </div>
       </div>
       <div>
-        <CodeExampleText codeExample={pageInfo.codeExample} />
+        <CardLinks Data={Data} />
       </div>
     </div>
   );
