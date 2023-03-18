@@ -41,6 +41,7 @@ export function Home({ Data }) {
           </p>
         </div>
       </div>
+      {/* <h1 className="hooks_h1">React Hooks</h1> */}
       <CardLinks Data={Data} />
     </div>
   );

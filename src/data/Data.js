@@ -7,12 +7,14 @@ export const Data = [
     img: require("../photos/hook_photos/useState_photo.png"),
     shortDec:
       "Components often need to change whats on the screen as a result of an interaction. Typing into a form, adding an item to your cart, even changing from day to night mode should update the result.",
-    dec1: " useState is one of the most important and often used hook.",
+    dec1: " useState is one of the most important and often used hook",
     dec2: " This handles reactive data, any data that changes in the application is called state, and when the state changes you want React to update the UI so that the latest changes are reflected to the end user.",
     dec3: "useState takes in one optional argument which is the default state. The function then returns an array that you can use within your component. The reason that they are returned in an array is so that we can destructor them with JS to easily assign the values to local variables that we can name whatever we want. ",
     dec4: "The first value is the reactive data (state), if we then reference it in the UI and the state changes, React will automatically update the UI accordingly to show the latest value. ",
-    dec5: `How do we update the UI:
+    HowDoWe: `How do we update the UI:`,
+    HowDoWeExp: `
 We can do this by using the setter ( the second value in the array), a simple example of this is shown below:`,
+
     codeExample: `
 export function UseStateHook() {
   const [currentNumber, setCurrentNumber] = useState(0);

@@ -43,7 +43,7 @@ export function CodeExampleText({ codeExample }) {
           language="javascript"
           style={atomOneDark}
           wrapLongLines={true}
-          // customStyle={{ padding: "0px" }}
+          // customStyle={{ display: "flex", width: "90%" }}
         >
           {codeExample}
         </SyntaxHighlighter>
